@@ -1,6 +1,6 @@
-docker build -t boonyaritth7/muti-client:latest -t boonyaritth7/muti-client:$SHA -f ./client/DOckerfile ./client
-docker build -t boonyaritth7/muti-server:latest -t boonyaritth7/muti-server:$SHA -f ./server/DOckerfile ./server
-docker build -t boonyaritth7/muti-worker:latest -t boonyaritth7/muti-worker:$SHA -f ./worker/DOckerfile ./worker
+docker build -t boonyaritth7/muti-client:latest -t boonyaritth7/muti-client:$SHA -f ./client/Dockerfile ./client
+docker build -t boonyaritth7/muti-server:latest -t boonyaritth7/muti-server:$SHA -f ./server/Dockerfile ./server
+docker build -t boonyaritth7/muti-worker:latest -t boonyaritth7/muti-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push boonyaritth7/muti-client:latest
 docker push boonyaritth7/muti-server:latest
