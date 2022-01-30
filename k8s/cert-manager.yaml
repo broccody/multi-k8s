@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: muti-k8s-wishwork-co-tls
+spec:
+  secretName: muti-k8s-wishwork-co
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: muti-k8s.wishwork.co
+  dnsNames:
+    - muti-k8s.wishwork.co
